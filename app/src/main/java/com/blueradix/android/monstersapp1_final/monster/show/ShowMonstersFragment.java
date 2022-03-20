@@ -14,7 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.blueradix.android.monstersapp1_final.databinding.ShowFragmentBinding;
+import com.blueradix.android.monstersapp1_final.databinding.ShowMonstersFragmentBinding;
 import com.blueradix.android.monstersapp1_final.monster.Monster;
 
 import java.util.List;
@@ -22,7 +22,7 @@ import java.util.List;
 public class ShowMonstersFragment extends Fragment {
 
     private ShowMonstersViewModel mViewModel;
-    private ShowFragmentBinding binding;
+    private ShowMonstersFragmentBinding binding;
 
 
     public static ShowMonstersFragment newInstance() {
@@ -32,7 +32,7 @@ public class ShowMonstersFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        binding = ShowFragmentBinding.inflate(inflater, container, false);
+        binding = ShowMonstersFragmentBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 
