@@ -8,6 +8,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.4076923076923077" />
         <entry key="app/src/main/res/layout/recycler_item_view.xml" value="0.45" />
         <entry key="app/src/main/res/layout/show_fragment.xml" value="0.40925925925925927" />
+        <entry key="app/src/main/res/layout/show_monsters_fragment.xml" value="0.309375" />
       </map>
     </option>
   </component>
