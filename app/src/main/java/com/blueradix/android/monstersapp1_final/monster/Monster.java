@@ -12,15 +12,20 @@ public class Monster {
     @PrimaryKey(autoGenerate = true)
     @NonNull
     @ColumnInfo(name = "ID")
-    private int id;
+    private Integer id;
 
-    @ColumnInfo
+    @ColumnInfo(name = "NAME")
     private String name;
+    @ColumnInfo(name = "DESCRIPTION")
     private String description;
+    @ColumnInfo(name = "IMAGE")
     private String image;
-    private int scariness;
-    private int votes;
-    private int stars;
+    @ColumnInfo(name = "SCARINESS")
+    private Integer scariness;
+    @ColumnInfo(name = "VOTES")
+    private Integer votes;
+    @ColumnInfo(name = "STARS")
+    private Integer stars;
 
     @Ignore
     public Monster() {
@@ -36,11 +41,12 @@ public class Monster {
     }
 
 
-    public int getId() {
+    @NonNull
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(@NonNull Integer id) {
         this.id = id;
     }
 
@@ -68,27 +74,27 @@ public class Monster {
         this.image = image;
     }
 
-    public int getScariness() {
+    public Integer getScariness() {
         return scariness;
     }
 
-    public void setScariness(int scariness) {
+    public void setScariness(Integer scariness) {
         this.scariness = scariness;
     }
 
-    public int getVotes() {
+    public Integer getVotes() {
         return votes;
     }
 
-    public void setVotes(int votes) {
+    public void setVotes(Integer votes) {
         this.votes = votes;
     }
 
-    public int getStars() {
+    public Integer getStars() {
         return stars;
     }
 
-    public void setStars(int stars) {
+    public void setStars(Integer stars) {
         this.stars = stars;
     }
 
