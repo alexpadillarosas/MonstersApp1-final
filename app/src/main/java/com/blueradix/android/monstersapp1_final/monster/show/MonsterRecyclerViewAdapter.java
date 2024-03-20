@@ -36,9 +36,9 @@ public class MonsterRecyclerViewAdapter extends ListAdapter<Monster, MonsterView
 
         @Override
         public boolean areContentsTheSame(@NonNull Monster oldItem, @NonNull Monster newItem) {
-            return  oldItem.getVotes() == newItem.getVotes() &&
-                    oldItem.getStars() == newItem.getStars() &&
-                    oldItem.getScariness() == newItem.getScariness() &&
+            return  oldItem.getVotes().equals(newItem.getVotes()) &&
+                    oldItem.getStars().equals(newItem.getStars()) &&
+                    oldItem.getScariness().equals(newItem.getScariness()) &&
                     oldItem.getDescription().equals(newItem.getDescription()) &&
                     oldItem.getName().equals(newItem.getName()) &&
                     oldItem.getImage().equals(newItem.getImage());

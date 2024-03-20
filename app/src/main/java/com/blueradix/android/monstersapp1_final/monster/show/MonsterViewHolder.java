@@ -25,7 +25,7 @@ public class MonsterViewHolder extends RecyclerView.ViewHolder {
     public void updateMonster(Monster monster){
         this.binding.monsterNameTextView.setText(monster.getName());
         this.binding.monsterDescriptionTextView.setText(monster.getDescription());
-        this.binding.monsterTotalVotesTextView.setText(monster.getVotes() + " Votes");
+        this.binding.monsterTotalVotesTextView.setText(monster.getVotes().toString() + " Votes");
 
         this.binding.monsterImageView.setImageResource(R.drawable.monster_7);
 //        int resID = binding.getRoot().getResources().getIdentifier(monster.getImage()"drawable", binding.getRoot().getContext().getPackageName());

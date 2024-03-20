@@ -41,10 +41,10 @@ public class ShowMonstersFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         mViewModel = new ViewModelProvider(this).get(ShowMonstersViewModel.class);
 
-//        RecyclerView recyclerView = binding.monstersRecyclerView;
+//      configure the Recycler View
         binding.monstersRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         binding.monstersRecyclerView.setHasFixedSize(true);
-
+//      set the adapter to the Recycler View
         MonsterRecyclerViewAdapter adapter = new MonsterRecyclerViewAdapter();
         binding.monstersRecyclerView.setAdapter(adapter);
 
