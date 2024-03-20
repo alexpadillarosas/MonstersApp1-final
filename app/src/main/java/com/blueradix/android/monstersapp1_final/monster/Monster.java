@@ -6,8 +6,10 @@ import androidx.room.Entity;
 import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
+import java.io.Serializable;
+
 @Entity(tableName = "MONSTER")
-public class Monster {
+public class Monster implements Serializable {
 
     @PrimaryKey(autoGenerate = true)
     @NonNull
